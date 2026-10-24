@@ -1,5 +1,7 @@
 # Gmail to Gmail Comparison & Audit Tool
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-orange.svg?style=flat-square&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/agent47)
+
 > **Purpose:** A lightweight, dependency-free Python utility designed to compare, audit, and verify email message counts and folder structures side-by-side between two Gmail or Google Workspace accounts (e.g., primary account vs. backup account, or post-migration audit).
 
 ## 🚀 Key Features
@@ -26,11 +28,11 @@ To allow the script to securely query your Gmail accounts over IMAP, you must ge
 
 ## ⚙️ Usage Instructions
 
-Set the credentials for both Gmail accounts as environment variables and run `verify_migration.py` (or `gmail_comparison.py`):
+Set the credentials for both Gmail accounts as environment variables and run `gmail-to-gmail-comparison-tool.py`:
 
 ### Option A: Linux / macOS (Terminal)
 
-```
+```bash
 # Source Gmail Account
 export SRC_HOST="imap.gmail.com"
 export SRC_USER="source-account@gmail.com"
@@ -42,13 +44,12 @@ export TGT_USER="backup-account@gmail.com"
 export TGT_PASS="ijkl5678mnop1234"
 
 # Run Comparison
-python3 verify_migration.py
-
+python3 gmail-to-gmail-comparison-tool.py
 ```
 
 ### Option B: Windows CMD (Command Prompt)
 
-```
+```cmd
 :: Source Gmail Account
 set SRC_HOST=imap.gmail.com
 set SRC_USER=source-account@gmail.com
@@ -60,13 +61,12 @@ set TGT_USER=backup-account@gmail.com
 set TGT_PASS=ijkl5678mnop1234
 
 :: Run Comparison
-python verify_migration.py
-
+python gmail-to-gmail-comparison-tool.py
 ```
 
 ### Option C: Windows PowerShell
 
-```
+```powershell
 # Source Gmail Account
 $env:SRC_HOST="imap.gmail.com"
 $env:SRC_USER="source-account@gmail.com"
@@ -78,13 +78,12 @@ $env:TGT_USER="backup-account@gmail.com"
 $env:TGT_PASS="ijkl5678mnop1234"
 
 # Run Comparison
-python verify_migration.py
-
+python gmail-to-gmail-comparison-tool.py
 ```
 
 ## 📊 Sample Output
 
-```
+```text
 ============================================================
 Folder Name                         | Source   | Target   | Status
 ============================================================
@@ -93,8 +92,7 @@ Sent Mail                           | 840      | 840      | MATCH OK
 Archive                             | 3120     | 3120     | MATCH OK
 Work/Projects                       | 150      | 150      | MATCH OK
 ============================================================
-[+] Success: All folder counts match perfectly!
-
+[+] Audit Success: All folder counts match perfectly!
 ```
 
 ## ☕ Support & Feedback
