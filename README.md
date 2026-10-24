@@ -1,7 +1,5 @@
 # Gmail to Gmail Comparison & Audit Tool
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-orange.svg?style=flat-square&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/agent47)
-
 > **Purpose:** A lightweight, dependency-free Python utility designed to compare, audit, and verify email message counts and folder structures side-by-side between two Gmail or Google Workspace accounts (e.g., primary account vs. backup account, or post-migration audit).
 
 ## 🚀 Key Features
